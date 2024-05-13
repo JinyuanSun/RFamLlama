@@ -1,0 +1,119 @@
+{
+    "version": "1.0",
+    "truncation": null,
+    "padding": null,
+    "added_tokens": [
+      {
+        "id": 0,
+        "special": true,
+        "content": "<|pad|>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 1,
+        "special": true,
+        "content": "<|bos|>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 2,
+        "special": true,
+        "content": "<|eos|>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 3,
+        "special": false,
+        "content": "<|tag_start|>",
+        "single_word": true,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 4,
+        "special": false,
+        "content": "<|tag_end|>",
+        "single_word": true,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 5,
+        "special": false,
+        "content": "<|5|>",
+        "single_word": true,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      },
+      {
+        "id": 6,
+        "special": false,
+        "content": "<|3|>",
+        "single_word": true,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false
+      }
+    ],
+    "normalizer": null,
+    "pre_tokenizer": {
+      "type": "ByteLevel",
+      "add_prefix_space": false,
+      "trim_offsets": true
+    },
+    "post_processor": {
+      "type": "ByteLevel",
+      "add_prefix_space": true,
+      "trim_offsets": true
+    },
+    "decoder": {
+      "type": "ByteLevel",
+      "add_prefix_space": true,
+      "trim_offsets": true
+    },
+    "model": {
+      "type": "BPE",
+      "dropout": null,
+      "unk_token": null,
+      "continuing_subword_prefix": null,
+      "end_of_word_suffix": null,
+      "fuse_unk": false,
+      "vocab": {
+        "<|pad|>": 0,
+        "<|bos|>": 1,
+        "<|eos|>": 2,
+        "<|tag_start|>": 3,
+        "<|tag_end|>": 4,
+        "<|5|>": 5,
+        "<|3|>": 6,
+        "0": 7,
+        "1": 8,
+        "2": 9,
+        "3": 10,
+        "4": 11,
+        "5": 12,
+        "6": 13,
+        "7": 14,
+        "8": 15,
+        "9": 16,
+        "A": 17,
+        "T": 18,
+        "C": 19,
+        "G": 20,
+        "N": 21
+      },
+      "merges": []
+    }
+  }

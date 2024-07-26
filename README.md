@@ -35,3 +35,12 @@ Run annotations for generated sequences:
 ```bash
 cmscan --cut_ga --rfam --nohmmonly --clanin Rfam.clanin --oskip --fmt 2 -o output.txt --tblout table.txt Rfam.cm rf00050.fa
 ```
+
+Citation:
+```bib
+@inproceedings{sun2024rfamllama,
+  title={RFamLlama: an efficient conditional language model for RNA sequence generation across diverse structural families},
+  author={Sun, Jinyuan and Li, Han and Deng, Yifan},
+  booktitle={ICML 2024 Workshop on Efficient and Accessible Foundation Models for Biological Discovery}
+}
+```

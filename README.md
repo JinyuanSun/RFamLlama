@@ -1,6 +1,7 @@
 # RFamLlama
-A pretrained LM for RNA
-
+A pretrained LM for RNA  
+Trained models on Huggingface:  
+[small](https://huggingface.co/jinyuan22/RFamLlama-small) | [base](https://huggingface.co/jinyuan22/RFamLlama-base) | [large](https://huggingface.co/jinyuan22/RFamLlama-large)
 
 
 ## Train the model
@@ -28,6 +29,8 @@ Run on `glmS_Sumi2023` dataset:
 ```bash
 python likelihood.py --device cpu --input_file glmS_Sumi2023.csv --seq_col seq --label_col kcat --bs 1 --tag RF00234
 ```
+
+Run annotations for generated sequences:  
 
 ```bash
 cmscan --cut_ga --rfam --nohmmonly --clanin Rfam.clanin --oskip --fmt 2 -o output.txt --tblout table.txt Rfam.cm rf00050.fa
